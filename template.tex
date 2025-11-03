@@ -1,0 +1,81 @@
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+\definecolor{HSEblue}{cmyk}{1,0.8,0,0.4}
+\definecolor{HSEgreen}{cmyk}{0.8,0.1,0.75,0} 
+\usecolortheme[named=HSEblue]{structure}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{frametitle}{fg=HSEblue}
+\setbeamercolor{date}{fg=HSEblue}
+\setbeamercolor{institute}{fg=HSEblue}
+\setbeamercolor{author}{fg=HSEblue}
+\setbeamercolor{headline}{bg=HSEblue}
+\setbeamercolor{itemize item}{fg=HSEblue}
+\setbeamercolor{itemize subitem}{fg=HSEblue}
+\setbeamercolor{itemize subsubitem}{fg=HSEblue}
+\setbeamercolor{palette primary}{bg=HSEblue}
+\setbeamercolor{palette primary}{fg=white}
+\setbeamercolor{palette secondary}{bg=HSEblue}
+\setbeamercolor{palette secondary}{fg=white}
+\setbeamercolor{palette tertiary}{bg=HSEblue}
+\setbeamercolor{palette tertiary}{fg=white}
+\setbeamercolor{BlueOnWhite}{fg=HSEblue,bg=white} % Pantone 287 on White
+\setbeamertemplate{headline}{\vspace{0.02\textwidth}\hspace{0.05\textwidth} \includegraphics[width=0.06\textwidth]{images/logo}}
+\setbeamertemplate{frametitle}{%
+  \vspace*{-4ex}
+  \begin{beamercolorbox}[leftskip=1.2cm]{frametitle}%
+    \usebeamerfont{frametitle}\insertframetitle\\
+    \usebeamerfont{framesubtitle}\insertframesubtitle
+  \end{beamercolorbox}
+}
+\makeatletter
+\setbeamertemplate{footline} % Footline
+{
+  \leavevmode%
+  \hbox{%
+%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{WhiteOnBlue}%
+%    \usebeamerfont{author in head/foot}\insertshortauthor
+%  \end{beamercolorbox}%
+%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{WhiteOnBlue}%
+%    \usebeamerfont{title in head/foot}\insertshortinstitute
+%  \end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,right]{WhiteOnBlue}%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2ex,dp=1ex,right]{BlueOnWhite}%
+    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+\makeatother
+
+\setbeamertemplate{title page}
+{ 
+  \thispagestyle{empty}
+  \vspace*{-4ex}
+  \begin{columns}
+    \column{0.25\textwidth}
+    \includegraphics[height=0.1\paperheight]{images/logo}
+    \column{0.333\textwidth}
+  \begin{beamercolorbox}{institute}
+    \usebeamerfont{institute}\footnotesize\insertinstitute
+  \end{beamercolorbox}
+    \column{0.25\textwidth}
+  \begin{beamercolorbox}[right]{date}
+    \usebeamerfont{date}\footnotesize\insertdate
+  \end{beamercolorbox}
+    \end{columns}
+    \vspace{20pt} 
+    \vfill
+  
+    \begin{beamercolorbox}[left]{title}
+    \usebeamerfont{title}\Huge\inserttitle
+    \end{beamercolorbox}
+    \vspace{15pt} 
+    \begin{beamercolorbox}[left]{subtitle}
+  \usebeamerfont{subtitle}\Large\insertsubtitle
+    \end{beamercolorbox}
+    \vspace{15pt} 
+    \begin{beamercolorbox}[left]{author}
+  \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+}

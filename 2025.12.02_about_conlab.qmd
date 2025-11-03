@@ -1,0 +1,42 @@
+---
+title: "О работе лаборатории 2023--2025"
+institute: "Международная лаборатория языковой конвергенции"
+author: "Г. А. Мороз"
+date: "12/02/2025"
+date-format: "D.MM.YYYY"
+format: 
+  beamer:
+    theme: default
+    aspectratio: 169
+    mainfont: HSE Sans
+    monofont: Iosevka
+    df-print: kable
+    pdf-engine: xelatex
+    cite-method: natbib
+    classoption: t
+    include-in-header: template.tex
+urlcolor: teal
+citecolor: teal
+lang: ru
+execute:
+  eval: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## Миссия
+
+\setcounter{framenumber}{1}
+
+- исследование контактных явлений в языках России
+- документация
+  - малых языков России
+  - диалектов русского языка
+  - билингвальной речи на русском языке
+- разработка и поддержка электронных ресурсов
+  - устных корпусов
+  - онлайн словарей
+  - дигитализация бумажных словарей
+  - лингвистических баз данных
