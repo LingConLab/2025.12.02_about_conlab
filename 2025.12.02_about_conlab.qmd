@@ -30,6 +30,8 @@ editor_options:
 #| include: false
 
 library(tidyverse)
+hse_green <- "#3dbf45"
+hse_blue <- "#021668"
 ```
 
 
@@ -52,6 +54,36 @@ library(tidyverse)
 
 - 2 российских постдока, 1 стажировка
 
+## \alert{\underline{Проекты}} Международной лаборатории языковой конвергенции
+
+## \alert{\underline{Экспедиции}} Международной лаборатории языковой конвергенции
+
+- сотрудники продолжают работу по документации
+
+```{r}
+#| eval: false
+
+read_csv("data/expeditions.csv") |> 
+  mutate(year_alert = if_else(year %in% 2023:2025, "alert", "no")) |> 
+  ggplot(aes(x = year, y = n, label = n))+
+  geom_col(aes(fill = year_alert))+
+  geom_label(size = 8, family = "HSE Sans")+
+  labs(x = NULL, y = NULL)+
+  theme_minimal()+
+  scale_fill_manual(values = c(hse_green, hse_blue))+
+  theme(legend.position = "none", axis.text.y = element_blank(),
+        text = element_text(size = 16, family = "HSE Sans")) ->
+  p1
+
+ggsave(filename = "images/expeditions.png", plot = p1, width = 12, height = 5)
+```
+
+```{r}
+#| out-width: 100%
+
+knitr::include_graphics("images/expeditions.png")
+```
+
 ## \alert{\underline{Семинары}} Международной лаборатории языковой конвергенции
 
 - продолжает работу [регулярный англоязычный семинар лаборатории](https://lingconlab.github.io/seminars_page/result_ru.html)
@@ -66,7 +98,7 @@ read_csv("data/seminars.csv") |>
   geom_label(size = 8, family = "HSE Sans")+
   labs(x = NULL, y = NULL)+
   theme_minimal()+
-  scale_fill_manual(values = c("#3dbf45", "#021668"))+
+  scale_fill_manual(values = c(hse_green, hse_blue))+
   theme(legend.position = "none", axis.text.y = element_blank(),
         text = element_text(size = 16, family = "HSE Sans")) ->
   p1
@@ -79,11 +111,6 @@ ggsave(filename = "images/seminars.png", plot = p1, width = 12, height = 5)
 
 knitr::include_graphics("images/seminars.png")
 ```
-
-
-## \alert{\underline{Проекты}} Международной лаборатории языковой конвергенции
-
-## \alert{\underline{Экспедиции}} Международной лаборатории языковой конвергенции
 
 ## \alert{\underline{Результаты}} Международной лаборатории языковой конвергенции
 
@@ -101,7 +128,7 @@ read_csv("data/news.csv") |>
   geom_label(size = 8, family = "HSE Sans")+
   labs(x = NULL, y = NULL)+
   theme_minimal()+
-  scale_fill_manual(values = c("#3dbf45", "#021668"))+
+  scale_fill_manual(values = c(hse_green, hse_blue))+
   theme(legend.position = "none", axis.text.y = element_blank(),
         text = element_text(size = 16, family = "HSE Sans")) ->
   p1
