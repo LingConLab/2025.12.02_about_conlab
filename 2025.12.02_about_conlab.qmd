@@ -1,5 +1,5 @@
 ---
-title: "О работе лаборатории 2023--2025"
+title: "О работе лаборатории в 2023--2025"
 institute: "Международная лаборатория языковой конвергенции"
 author: "Г. А. Мороз"
 date: "12/02/2025"
@@ -19,12 +19,19 @@ urlcolor: HSEgreen
 citecolor: HSEgreen
 lang: ru
 execute:
-  eval: false
+  echo: false
   message: false
   warning: false
 editor_options: 
   chunk_output_type: console
 ---
+
+```{r}
+#| include: false
+
+library(tidyverse)
+```
+
 
 ## \alert{\underline{Миссия}} Международной лаборатории языковой конвергенции
 
@@ -47,6 +54,33 @@ editor_options:
 
 ## \alert{\underline{Семинары}} Международной лаборатории языковой конвергенции
 
+- продолжает работу [регулярный англоязычный семинар лаборатории](https://lingconlab.github.io/seminars_page/result_ru.html)
+
+```{r}
+#| eval: false
+
+read_csv("data/seminars.csv") |> 
+  mutate(year_alert = if_else(year %in% 2023:2025, "alert", "no")) |> 
+  ggplot(aes(x = year, y = n_seminars, label = n_seminars))+
+  geom_col(aes(fill = year_alert))+
+  geom_label(size = 8, family = "HSE Sans")+
+  labs(x = NULL, y = NULL)+
+  theme_minimal()+
+  scale_fill_manual(values = c("#3dbf45", "#021668"))+
+  theme(legend.position = "none", axis.text.y = element_blank(),
+        text = element_text(size = 16, family = "HSE Sans")) ->
+  p1
+
+ggsave(filename = "images/seminars.png", plot = p1, width = 12, height = 5)
+```
+
+```{r}
+#| out-width: 100%
+
+knitr::include_graphics("images/seminars.png")
+```
+
+
 ## \alert{\underline{Проекты}} Международной лаборатории языковой конвергенции
 
 ## \alert{\underline{Экспедиции}} Международной лаборатории языковой конвергенции
@@ -55,9 +89,37 @@ editor_options:
 
 ## \alert{\underline{СМИ о}} Международной лаборатории языковой конвергенции
 
-- регулярно публикуются новости на сайте лаборатории <https://ilcl.hse.ru/>: в 2023 22 сообщения; в 2024 17 сообщений; в 2025 27 сообщений \pause
+- регулярно публикуются новости на сайте лаборатории <https://ilcl.hse.ru/>:
+
+```{r}
+#| eval: false
+
+read_csv("data/news.csv") |> 
+  mutate(year_alert = if_else(year %in% 2023:2025, "alert", "no")) |> 
+  ggplot(aes(x = year, y = n, label = n))+
+  geom_col(aes(fill = year_alert))+
+  geom_label(size = 8, family = "HSE Sans")+
+  labs(x = NULL, y = NULL)+
+  theme_minimal()+
+  scale_fill_manual(values = c("#3dbf45", "#021668"))+
+  theme(legend.position = "none", axis.text.y = element_blank(),
+        text = element_text(size = 16, family = "HSE Sans")) ->
+  p1
+
+ggsave(filename = "images/news.png", plot = p1, width = 12, height = 5)
+```
+
+```{r}
+#| out-width: 100%
+
+knitr::include_graphics("images/news.png")
+```
+
+## \alert{\underline{СМИ о}} Международной лаборатории языковой конвергенции
+
+- регулярно публикуются новости на сайте лаборатории <https://ilcl.hse.ru/>:
 - новости лаборатории освещаются на портале НИУ ВШЭ, на страницах и в Telegram-каналах Школы Лингвистики и Факультета гуманитарных наук  \pause
-- 7 новостей на первой странице портала НИУ ВШЭ  за 2025 год: \tiny
+- 7 новостей на первой странице портала НИУ ВШЭ за 2025 год:
   - [«Пока на языке говорит молодежь, живет надежда на его будущее»](https://www.hse.ru/news/science/1045320540.html)
   - [«Двадцать против десяти: в НИУ ВШЭ проанализировали, как развивались числительные у лезгинских народов»](https://www.hse.ru/news/science/1045320540.html)
   - [«Лингвисты НИУ ВШЭ выяснили, как билингвы используют конструкции с числительными в русском языке»](https://www.hse.ru/news/science/1050582618.html)
