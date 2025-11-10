@@ -30,6 +30,9 @@ editor_options:
 #| include: false
 
 library(tidyverse)
+theme_set(theme_minimal() +
+            theme(legend.position = "none", axis.text.y = element_blank(),
+                  text = element_text(size = 16, family = "HSE Sans")))
 hse_green <- "#3dbf45"
 hse_blue <- "#021668"
 ```
@@ -52,9 +55,62 @@ hse_blue <- "#021668"
 
 ## \alert{\underline{Команда}} Международной лаборатории языковой конвергенции
 
-- 2 российских постдока, 1 стажировка
+```{r}
+#| eval: false
+
+read_csv("data/team.csv") |> 
+  mutate(year_alert = if_else(year %in% 2023:2025, "alert", "no"),
+         type = factor(type, levels = c("молодые ученые (до 30 лет)", "все сотрудники"))) |> 
+  ggplot(aes(x = year, y = n, label = n))+
+  geom_col(aes(fill = year_alert))+
+  geom_label(size = 8, family = "HSE Sans")+
+  facet_wrap(~type, ncol = 1)+
+  labs(x = NULL, y = NULL)+
+  scale_fill_manual(values = c(hse_green, hse_blue)) ->
+  p1
+
+ggsave(filename = "images/team.png", plot = p1, width = 12, height = 6)
+```
+
+```{r}
+#| out-width: 100%
+
+knitr::include_graphics("images/team.png")
+```
+
+## \alert{\underline{Команда}} Международной лаборатории языковой конвергенции
+
+- лаборатория активно участвует в программе дополнительного набора студентов
+- за отчетный период мы реализовали работу
+  - двух российских постдоков
+  - одну стажировку
 
 ## \alert{\underline{Проекты}} Международной лаборатории языковой конвергенции
+
+## \alert{\underline{Гранты}} Международной лаборатории языковой конвергенции
+
+- грант РНФ (23-28-01201) "Множественный и повторный поэтический перевод в России: лингвостатистический и количественный подход"
+- грант РНФ (24-28-01097) "Исследование вариативности билингвального и диалектного русского языка на материале устных корпусов"
+- грант РНФ (24-28-01009) "Ареально-типологическое описание новоарамейских идиомов Армении"
+- грант РНФ (24-18-00879) "Принципы формирования полисемии и колексификации: границы возможного" \pause
+
+Мы привлекли \alert{\underline{23.5 млн рублей}}, превысив почти в \alert{\underline{3 раза}} наши обязательства.
+
+## \alert{\underline{Защиты}} в Международной лаборатории языковой конвергенции
+
+- кандидатские
+  - А. Н. Закирова
+  - И. В. Макарчук
+  - Н. Н. Логвинова
+- докторские
+  - Т. А. Майсак \pause
+- прошли предзащиту
+  - А. А. Русских
+  - К. В. Филатов
+  - Е. Е. Шведова \pause
+- аспиранты работают в лаборатории
+  - П. Л. Наследскова
+  - М. Г. Меленченко
 
 ## \alert{\underline{Экспедиции}} Международной лаборатории языковой конвергенции
 
@@ -69,10 +125,7 @@ read_csv("data/expeditions.csv") |>
   geom_col(aes(fill = year_alert))+
   geom_label(size = 8, family = "HSE Sans")+
   labs(x = NULL, y = NULL)+
-  theme_minimal()+
-  scale_fill_manual(values = c(hse_green, hse_blue))+
-  theme(legend.position = "none", axis.text.y = element_blank(),
-        text = element_text(size = 16, family = "HSE Sans")) ->
+  scale_fill_manual(values = c(hse_green, hse_blue)) ->
   p1
 
 ggsave(filename = "images/expeditions.png", plot = p1, width = 12, height = 5)
@@ -97,10 +150,7 @@ read_csv("data/seminars.csv") |>
   geom_col(aes(fill = year_alert))+
   geom_label(size = 8, family = "HSE Sans")+
   labs(x = NULL, y = NULL)+
-  theme_minimal()+
-  scale_fill_manual(values = c(hse_green, hse_blue))+
-  theme(legend.position = "none", axis.text.y = element_blank(),
-        text = element_text(size = 16, family = "HSE Sans")) ->
+  scale_fill_manual(values = c(hse_green, hse_blue)) ->
   p1
 
 ggsave(filename = "images/seminars.png", plot = p1, width = 12, height = 5)
@@ -127,10 +177,7 @@ read_csv("data/news.csv") |>
   geom_col(aes(fill = year_alert))+
   geom_label(size = 8, family = "HSE Sans")+
   labs(x = NULL, y = NULL)+
-  theme_minimal()+
-  scale_fill_manual(values = c(hse_green, hse_blue))+
-  theme(legend.position = "none", axis.text.y = element_blank(),
-        text = element_text(size = 16, family = "HSE Sans")) ->
+  scale_fill_manual(values = c(hse_green, hse_blue)) ->
   p1
 
 ggsave(filename = "images/news.png", plot = p1, width = 12, height = 5)
