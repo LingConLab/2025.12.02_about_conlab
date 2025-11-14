@@ -155,8 +155,9 @@ knitr::include_graphics("images/seminars.png")
   - 4 исследования, основанных на больших выборках языков мира
   - 3 других исследования
 - Не вошли в подсчет
-  - 3 статьи, опубликованные Online First
-  - 9 статей на этапе рецензирования
+  - 2 статьи, опубликованные Online First
+  - 3 статьи, принятые к публикации
+  - 10 статей на этапе рецензирования
   
 <!--
 # исследования русского и других славянских языков
@@ -193,16 +194,18 @@ knitr::include_graphics("images/seminars.png")
 
 - Circassian relatives: a contribution to the synchronic and diachronic typology of the externally/internally-headed relative clause distinction
 - Non-standard numeral constructions in L2 Russian: A corpus-based study
+
+# accepted
+
 - Preposition drop in Russian spoken by Mari and Besermyan bilinguals
-
-# Accepted
-
+- Development of narrative competence in Mano, Mande
 - The ‘say’ strategy for ordinal numerals in East Caucasian: Conflicting evidence on the evolution of a rare morphosyntactic pattern.
 
 # Under Review
 
 - Areal spread of discourse formulas
 - Shugni
+- A corpus-driven approach to teaching academic Russian as a second language
 - Typology of verbal borrowings in Tsezic languages and beyond
 - Negative existential constructions in bilingual Russian: A corpus-driven approach to variation
 - Phonological adaptation of Russian borrowings in Avar-Andic languages
