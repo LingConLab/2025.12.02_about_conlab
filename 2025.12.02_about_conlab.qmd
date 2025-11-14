@@ -42,7 +42,6 @@ hse_blue <- "#021668"
 
 \setcounter{framenumber}{1}
 
-- исследование контактных явлений в языках России и диалектах русского языка \pause
 - документация
   - малоресурсных языков России
   - диалектов русского языка
@@ -51,7 +50,17 @@ hse_blue <- "#021668"
   - устных корпусов
   - онлайн словарей
   - дигитализация бумажных словарей
-  - лингвистических баз данных
+  - лингвистических баз данных \pause
+- исследование контактных явлений в языках России и диалектах русского языка
+
+## \alert{\underline{Проекты}} Международной лаборатории языковой конвергенции
+
+- крупнейший в России центр хранения устных корпусов
+  - устных корпусов на малоресурсных языках России
+  - диалектов русского языка
+  - билингвальной речи на русском языке
+- крупный центр по полевой документации и исследованию языков России
+- [наша страница](https://lingconlab.ru/ru/) содержит более 70 разных ресурсов по языкам России и диалектам русского языка
 
 ## \alert{\underline{Команда}} Международной лаборатории языковой конвергенции
 
@@ -84,37 +93,6 @@ knitr::include_graphics("images/team.png")
 - за отчетный период мы реализовали работу
   - двух российских постдоков
   - одну стажировку
-
-## \alert{\underline{Проекты}} Международной лаборатории языковой конвергенции
-
-## \alert{\underline{Гранты}} Международной лаборатории языковой конвергенции
-
-- грант РНФ (23-28-01201) "Множественный и повторный поэтический перевод в России: лингвостатистический и количественный подход"
-- грант РНФ (24-28-01097) "Исследование вариативности билингвального и диалектного русского языка на материале устных корпусов"
-- грант РНФ (24-28-01009) "Ареально-типологическое описание новоарамейских идиомов Армении"
-- грант РНФ (24-18-00879) "Принципы формирования полисемии и колексификации: границы возможного" \pause
-
-Мы привлекли \alert{\underline{23.5 млн рублей}}, превысив почти в \alert{\underline{3 раза}} наши обязательства. \pause
-
-Также лобаротория участвовала в
-
-- 
-
-## \alert{\underline{Защиты}} в Международной лаборатории языковой конвергенции
-
-- кандидатские
-  - А. Н. Закирова
-  - И. В. Макарчук
-  - Н. Н. Логвинова
-- докторские
-  - Т. А. Майсак \pause
-- прошли предзащиту
-  - А. А. Русских
-  - К. В. Филатов
-  - Е. Е. Шведова \pause
-- остальные аспиранты, работающие в лаборатории
-  - П. Л. Наследскова
-  - М. Г. Меленченко
 
 ## \alert{\underline{Экспедиции}} Международной лаборатории языковой конвергенции
 
@@ -167,6 +145,142 @@ knitr::include_graphics("images/seminars.png")
 ```
 
 ## \alert{\underline{Результаты}} Международной лаборатории языковой конвергенции
+
+- Статьи в журналах из списка А и главы в A^P^: 14 \pause + 4 \pause (план 23) \pause
+  - 6 исследований русского и других славянских языков
+  - 5 исследований, посвященных малоресурсным языкам России
+  - 4 исследования, основанных на больших выборках языков мира
+  - 3 другие исследования
+- Не вошли в подсчет
+  - 3 статьи, опубликованные Online First
+  - 9 статей на этапе рецензирования
+  
+<!--
+# исследования русского и других славянских языков
+
+- Функционирование деепричастий в русском языке XVIII в.: к вопросу об эволюции их грамматического значения
+- Concord in Russian close appositional constructions: a quantitative study
+- К хронологии утраты действительным причастием прошедшего времени предикативности в истории русского языка
+- The Tomsk Dialect Corpus: a comprehensively annotated database of a Siberian Russian dialect from material collected over the last 70 years
+- An overview of morphosyntactic variation in the speech of Russian-Chuvash bilinguals: number, gender, case assignment and preposition drop
+- On the grammaticalization of -no/-to–forms in the history of the Polish language
+
+# исследования, посвященные малоресурсным языкам России
+
+- Language ideology in an endogamous society: The case of Daghestan
+- The ‘Still Not’ Present in Andi: identifying the grammaticalization source
+- From an adverb/postposition ‘behind’ to a discourse marker: The particle reχu in Andi
+- Demonstrative pronouns in Kina Rutul
+- Numeral systems in Lezgic languages
+
+# исследования, основанные на выборках языков мира
+
+- Lexical systems with systematic gaps: verbs of falling
+- Northern Asia as a linguistic area
+- Binominals denoting instruments: a contrastive perspective
+- Geospatial effects on phonological complexity in the world’s languages
+
+# другие
+
+- Awareness of Grammatical Variability in Language Contact: The Case of Mano and Kpelle in Guinea
+- Valency patterns in Mande: Contact vs inheritance
+- Multidimensional Signals and Analytic Flexibility: Estimating Degrees of Freedom in Human-Speech Analyses
+
+# online first
+
+- Circassian relatives: a contribution to the synchronic and diachronic typology of the externally/internally-headed relative clause distinction
+- Non-standard numeral constructions in L2 Russian: A corpus-based study
+- Preposition drop in Russian spoken by Mari and Besermyan bilinguals
+
+# Accepted
+
+- The ‘say’ strategy for ordinal numerals in East Caucasian: Conflicting evidence on the evolution of a rare morphosyntactic pattern.
+
+# Under Review
+
+- Areal spread of discourse formulas
+- Shugni
+- Typology of verbal borrowings in Tsezic languages and beyond
+- Negative existential constructions in bilingual Russian: A corpus-driven approach to variation
+- Phonological adaptation of Russian borrowings in Avar-Andic languages
+- Reflexive pronouns in East Caucasian languages: characteristics
+of the paradigm, expression of gender, case syncretism, and patterns of suppletion
+- Visualization of spoken bilingual Russian corpora
+- Towards a typology of imperative interjections: ‘take it!’ in the Caucasus
+- Describing the lexicon of an individual language on a typological background: The semantic field of throwing in West Circassian and beyond
+
+-->
+
+## \alert{\underline{Результаты}} Международной лаборатории языковой конвергенции
+
+- опубликованы новые корпуса и ресурсы
+  - 5 корпусов малых языков
+  - 3 корпуса билингвального русского
+  - 6 корпусов русских диалектов
+  - созданы и пополняются лингвистические базы данных
+  - созданы, новые инструменты для лингвистического исследования (пакеты `RCaucTile` и `PyCaucTile`) \pause
+- более 40 докладов на международных конференциях
+  - нашу аспирантку Е. Е. Шведову наградили за лучший доклад на 58-й конференции Societas Linguistica Europaea \pause
+- огранизовали три серии семинаров и две школы «Общества полевых лингвистов»
+- выступили соорганизаторами II Международного симпозиума «Лексикография цифровой эпохи»
+
+<!--
+# ресурсы
+- RCaucTile: пакет для картографирования нахско-дагестанских языков
+- Опубликована вторая версия Типологического атласа языков Дагестана
+- Атлас диалектов рутульского языка
+- DAG < APT
+- База данных просодии русских диалектов
+
+- Опубликован устный корпус малокарачкинского говора чувашского языка
+- Опубликован корпус нанайских текстов
+- Опубликован устный корпус цнальского говора лезгинского языка
+- https://lingconlab.ru/botlikh/
+- Словарь зиловского диалекта андийского языка
+
+- Обско-угорская экспедиция и новые билингвальные корпуса
+- Устный корпус ассирийского руского
+
+- Завершена работа над корпусом говора деревни Пятиусово
+- https://lingconlab.ru/mikhaylov/#!/
+- https://lingconlab.ru/yelets/#!/
+- Корпус говоров Ильменского Поозерья
+- Корпус говора села Поповка
+- Корпус говора села Колодежное
+
+-->
+
+## \alert{\underline{Гранты}} Международной лаборатории языковой конвергенции
+
+- грант РНФ (23-28-01201) «Множественный и повторный поэтический перевод в России: лингвостатистический и количественный подход»
+- грант РНФ (24-28-01097) «Исследование вариативности билингвального и диалектного русского языка на материале устных корпусов»
+- грант РНФ (24-28-01009) «Ареально-типологическое описание новоарамейских идиомов Армении»
+- грант РНФ (24-18-00879) «Принципы формирования полисемии и колексификации: границы возможного» \pause
+
+Мы привлекли \alert{\underline{23.5 млн рублей}}, превысив почти в \alert{\underline{3 раза}} наши обязательства. \pause
+
+Также лаборатория участвовала в
+
+- проекте «Зеркальные лаборатории» совместно с ЮФУ
+- межкампусном проекте совместно с кампусом в Санкт-Петербурге 
+
+## \alert{\underline{Защиты}} в Международной лаборатории языковой конвергенции
+
+- по плану 5: \pause
+  - кандидатские
+    - А. Н. Закирова
+    - И. В. Макарчук
+    - Н. Н. Логвинова
+  - докторские
+    - Т. А. Майсак \pause
+- прошли предзащиту
+  - А. А. Русских
+  - К. В. Филатов
+  - Е. Е. Шведова \pause
+- остальные аспиранты, работающие в лаборатории
+  - П. Л. Наследскова
+  - М. Г. Меленченко
+
 
 ## \alert{\underline{СМИ о}} Международной лаборатории языковой конвергенции
 
@@ -223,4 +337,4 @@ knitr::include_graphics("images/news.png")
 - встраивание в объединенный проект (ФИ-2025-32)
   - дополнительная бюрократическая нагрузка
   - в дополнение к требованиям НИУ ВШЭ добавляются требования РАН
-    - в борьбе с мелкими темами мы вынуждены переформатировать уже активные проекты
+    - борьба с мелкими темами
