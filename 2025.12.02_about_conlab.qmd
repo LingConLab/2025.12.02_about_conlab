@@ -56,7 +56,7 @@ hse_blue <- "#021668"
 ## \alert{\underline{Проекты}} Международной лаборатории языковой конвергенции
 
 - крупнейший в России центр хранения устных корпусов
-  - устных корпусов на малоресурсных языках России
+  - малоресурсных языков России
   - диалектов русского языка
   - билингвальной речи на русском языке
 - крупный центр по полевой документации и исследованию языков России
@@ -75,7 +75,8 @@ read_csv("data/team.csv") |>
   geom_label(size = 8, family = "HSE Sans")+
   facet_wrap(~type, ncol = 1)+
   labs(x = NULL, y = NULL)+
-  scale_fill_manual(values = c(hse_green, hse_blue)) ->
+  scale_fill_manual(values = c(hse_green, hse_blue)) +
+  scale_x_continuous(breaks = 2017:2025) ->
   p1
 
 ggsave(filename = "images/team.png", plot = p1, width = 12, height = 6)
@@ -107,7 +108,8 @@ read_csv("data/expeditions.csv") |>
   geom_col(aes(fill = year_alert))+
   geom_label(size = 8, family = "HSE Sans")+
   labs(x = NULL, y = NULL)+
-  scale_fill_manual(values = c(hse_green, hse_blue)) ->
+  scale_fill_manual(values = c(hse_green, hse_blue)) +
+  scale_x_continuous(breaks = 2017:2025) ->
   p1
 
 ggsave(filename = "images/expeditions.png", plot = p1, width = 12, height = 5)
@@ -132,7 +134,8 @@ read_csv("data/seminars.csv") |>
   geom_col(aes(fill = year_alert))+
   geom_label(size = 8, family = "HSE Sans")+
   labs(x = NULL, y = NULL)+
-  scale_fill_manual(values = c(hse_green, hse_blue)) ->
+  scale_fill_manual(values = c(hse_green, hse_blue)) +
+  scale_x_continuous(breaks = 2017:2025) ->
   p1
 
 ggsave(filename = "images/seminars.png", plot = p1, width = 12, height = 5)
@@ -295,7 +298,8 @@ read_csv("data/news.csv") |>
   geom_col(aes(fill = year_alert))+
   geom_label(size = 8, family = "HSE Sans")+
   labs(x = NULL, y = NULL)+
-  scale_fill_manual(values = c(hse_green, hse_blue)) ->
+  scale_fill_manual(values = c(hse_green, hse_blue)) +
+  scale_x_continuous(breaks = 2017:2025) ->
   p1
 
 ggsave(filename = "images/news.png", plot = p1, width = 12, height = 5)
