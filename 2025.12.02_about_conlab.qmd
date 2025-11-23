@@ -156,8 +156,9 @@ knitr::include_graphics("images/seminars.png")
   - 3 других исследования
 - Не вошли в подсчет
   - 2 статьи, опубликованные Online First
-  - 3 статьи, принятые к публикации
-  - 10 статей на этапе рецензирования
+  - 2 статьи, принятые к публикации
+  - 1 статья, принятая с minor revision
+  - 11 статей на этапе рецензирования
   
 <!--
 # исследования русского и других славянских языков
@@ -198,8 +199,10 @@ knitr::include_graphics("images/seminars.png")
 # accepted
 
 - Preposition drop in Russian spoken by Mari and Besermyan bilinguals
-- Development of narrative competence in Mano, Mande
 - The ‘say’ strategy for ordinal numerals in East Caucasian: Conflicting evidence on the evolution of a rare morphosyntactic pattern.
+
+# minor revision
+- Development of narrative competence in Mano, Mande
 
 # Under Review
 
@@ -214,6 +217,7 @@ of the paradigm, expression of gender, case syncretism, and patterns of suppleti
 - Visualization of spoken bilingual Russian corpora
 - Towards a typology of imperative interjections: ‘take it!’ in the Caucasus
 - Describing the lexicon of an individual language on a typological background: The semantic field of throwing in West Circassian and beyond
+- Typology of expressions of ordinal meaning
 
 -->
 
