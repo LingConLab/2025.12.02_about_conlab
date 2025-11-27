@@ -12,7 +12,6 @@ format:
     monofont: Iosevka
     df-print: kable
     pdf-engine: xelatex
-    cite-method: natbib
     classoption: t
     include-in-header: template.tex
 urlcolor: HSEgreen
@@ -91,8 +90,8 @@ knitr::include_graphics("images/team.png")
 ## \alert{\underline{Команда}} Международной лаборатории языковой конвергенции
 
 - лаборатория активно участвует в программе дополнительного набора студентов
-- за отчетный период мы реализовали работу
-  - двух российских постдоков
+- за отчетный период мы организовали
+  - работу двух российских постдоков
   - одну стажировку
 
 ## \alert{\underline{Экспедиции}} Международной лаборатории языковой конвергенции
@@ -157,8 +156,8 @@ knitr::include_graphics("images/seminars.png")
 - Не вошли в подсчет
   - 2 статьи, опубликованные Online First
   - 2 статьи, принятые к публикации
-  - 1 статья, принятая с minor revision
-  - 11 статей на этапе рецензирования
+  - 2 статьи, принятые с minor revisions
+  - 10 статей на этапе рецензирования
   
 <!--
 # исследования русского и других славянских языков
@@ -203,18 +202,16 @@ knitr::include_graphics("images/seminars.png")
 
 # minor revision
 - Development of narrative competence in Mano, Mande
+- Negative existential constructions in bilingual Russian: A corpus-driven approach to variation
 
 # Under Review
-
+- Visualization of spoken bilingual Russian corpora
+- Reflexive pronouns in East Caucasian languages: characteristics of the paradigm, expression of gender, case syncretism, and patterns of suppletion
+- Phonological adaptation of Russian borrowings in Avar-Andic languages
+- A corpus-driven approach to teaching academic Russian as a second language
 - Areal spread of discourse formulas
 - Shugni
-- A corpus-driven approach to teaching academic Russian as a second language
 - Typology of verbal borrowings in Tsezic languages and beyond
-- Negative existential constructions in bilingual Russian: A corpus-driven approach to variation
-- Phonological adaptation of Russian borrowings in Avar-Andic languages
-- Reflexive pronouns in East Caucasian languages: characteristics
-of the paradigm, expression of gender, case syncretism, and patterns of suppletion
-- Visualization of spoken bilingual Russian corpora
 - Towards a typology of imperative interjections: ‘take it!’ in the Caucasus
 - Describing the lexicon of an individual language on a typological background: The semantic field of throwing in West Circassian and beyond
 - Typology of expressions of ordinal meaning
