@@ -154,8 +154,8 @@ knitr::include_graphics("images/seminars.png")
   - 4 исследования, основанных на больших выборках языков мира
   - 3 других исследования
 - Не вошли в подсчет
-  - 2 статьи, опубликованные Online First
-  - 2 статьи, принятые к публикации
+  - 3 статьи, опубликованные Online First
+  - 1 статья, принятая к публикации
   - 2 статьи, принятые с minor revisions
   - 10 статей на этапе рецензирования
   
@@ -194,10 +194,10 @@ knitr::include_graphics("images/seminars.png")
 
 - Circassian relatives: a contribution to the synchronic and diachronic typology of the externally/internally-headed relative clause distinction
 - Non-standard numeral constructions in L2 Russian: A corpus-based study
+- Preposition drop in Russian spoken by Mari and Besermyan bilinguals
 
 # accepted
 
-- Preposition drop in Russian spoken by Mari and Besermyan bilinguals
 - The ‘say’ strategy for ordinal numerals in East Caucasian: Conflicting evidence on the evolution of a rare morphosyntactic pattern.
 
 # minor revision
