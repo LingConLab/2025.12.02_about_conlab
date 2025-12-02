@@ -68,7 +68,7 @@ hse_blue <- "#021668"
 
 read_csv("data/team.csv") |> 
   mutate(year_alert = if_else(year %in% 2023:2025, "alert", "no"),
-         type = factor(type, levels = c("молодые ученые (до 30 лет)", "все сотрудники"))) |> 
+         type = factor(type, levels = c("молодые ученые (до 39 лет)", "все сотрудники"))) |> 
   ggplot(aes(x = year, y = n, label = n))+
   geom_col(aes(fill = year_alert))+
   geom_label(size = 8, family = "HSE Sans")+
